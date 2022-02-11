@@ -1,0 +1,2121 @@
+2022/02/08 14:01:47 [error] [php] Undefined variable $model (C:\xampp\htdocs\yii\proyecto1\protected\views\hola\index.php:2)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): HolaController->renderInternal()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): HolaController->renderFile()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): HolaController->renderPartial()
+#4 C:\xampp\htdocs\yii\proyecto1\protected\controllers\HolaController.php(9): HolaController->render()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): HolaController->actionIndex()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(286): HolaController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(265): HolaController->runActionWithFilters()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): HolaController->run()
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\yii\proyecto1\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/proyecto1/hola/index
+in C:\xampp\htdocs\yii\proyecto1\protected\views\hola\index.php (2)
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\HolaController.php (9)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 14:05:57 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'proyecto1.tbl_user' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_user`.
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\HolaController.php (7)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 14:05:57 [error] [exception.CDbException] CDbException: The table "tbl_user" for active record class "Clientes" cannot be found in the database. in C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php:2390
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(413): CActiveRecordMetaData->__construct(Object(Clientes))
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(663): CActiveRecord->getMetaData()
+#2 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1358): CActiveRecord->getTableSchema()
+#3 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1478): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\xampp\htdocs\yii\proyecto1\protected\controllers\HolaController.php(7): CActiveRecord->findAll()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): HolaController->actionIndex()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('hola/index')
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/yii/proyecto1/hola/index
+---
+2022/02/08 14:52:11 [error] [php] include(nombre_cliente.php): Failed to open stream: No such file or directory (C:\xampp\htdocs\yii\framework\YiiBase.php:463)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\YiiBase.php(463): include()
+#1 unknown(0): autoload()
+#2 C:\xampp\htdocs\yii\framework\YiiBase.php(310): class_exists()
+#3 C:\xampp\htdocs\yii\framework\validators\CValidator.php(174): import()
+#4 C:\xampp\htdocs\yii\framework\base\CModel.php(287): createValidator()
+#5 C:\xampp\htdocs\yii\framework\base\CModel.php(260): Clientes->createValidators()
+#6 C:\xampp\htdocs\yii\framework\base\CModel.php(158): Clientes->getValidators()
+#7 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(810): Clientes->validate()
+#8 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(13): Clientes->save()
+#9 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionIndex()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(286): ClientesController->runAction()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ClientesController->run()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\yii\proyecto1\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/proyecto1/clientes/index
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (13)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 15:21:25 [error] [php] include(nombre_cliente.php): Failed to open stream: No such file or directory (C:\xampp\htdocs\yii\framework\YiiBase.php:463)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\YiiBase.php(463): include()
+#1 unknown(0): autoload()
+#2 C:\xampp\htdocs\yii\framework\YiiBase.php(310): class_exists()
+#3 C:\xampp\htdocs\yii\framework\validators\CValidator.php(174): import()
+#4 C:\xampp\htdocs\yii\framework\base\CModel.php(287): createValidator()
+#5 C:\xampp\htdocs\yii\framework\base\CModel.php(260): Clientes->createValidators()
+#6 C:\xampp\htdocs\yii\framework\base\CModel.php(158): Clientes->getValidators()
+#7 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(810): Clientes->validate()
+#8 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(13): Clientes->save()
+#9 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionIndex()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(286): ClientesController->runAction()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ClientesController->run()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\yii\proyecto1\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/proyecto1/clientes/index
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (13)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 15:34:58 [error] [php] include(nombre_cliente.php): Failed to open stream: No such file or directory (C:\xampp\htdocs\yii\framework\YiiBase.php:463)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\YiiBase.php(463): include()
+#1 unknown(0): autoload()
+#2 C:\xampp\htdocs\yii\framework\YiiBase.php(310): class_exists()
+#3 C:\xampp\htdocs\yii\framework\validators\CValidator.php(174): import()
+#4 C:\xampp\htdocs\yii\framework\base\CModel.php(287): createValidator()
+#5 C:\xampp\htdocs\yii\framework\base\CModel.php(260): Clientes->createValidators()
+#6 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2491): Clientes->getValidators()
+#7 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1554): activeInputField()
+#8 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(793): activeTextField()
+#9 C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\create.php(3): CActiveForm->textField()
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): ClientesController->renderInternal()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(872): ClientesController->renderFile()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(785): ClientesController->renderPartial()
+#14 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(14): ClientesController->render()
+#15 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionCreate()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(286): ClientesController->runAction()
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ClientesController->run()
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\yii\proyecto1\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/proyecto1/clientes/create
+in C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\create.php (3)
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (14)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 15:36:57 [error] [php] include(nombre_cliente.php): Failed to open stream: No such file or directory (C:\xampp\htdocs\yii\framework\YiiBase.php:463)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\YiiBase.php(463): include()
+#1 unknown(0): autoload()
+#2 C:\xampp\htdocs\yii\framework\YiiBase.php(310): class_exists()
+#3 C:\xampp\htdocs\yii\framework\validators\CValidator.php(174): import()
+#4 C:\xampp\htdocs\yii\framework\base\CModel.php(287): createValidator()
+#5 C:\xampp\htdocs\yii\framework\base\CModel.php(260): Clientes->createValidators()
+#6 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2491): Clientes->getValidators()
+#7 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1554): activeInputField()
+#8 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(793): activeTextField()
+#9 C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\create.php(3): CActiveForm->textField()
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): ClientesController->renderInternal()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(872): ClientesController->renderFile()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(785): ClientesController->renderPartial()
+#14 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(14): ClientesController->render()
+#15 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionCreate()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(286): ClientesController->runAction()
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ClientesController->run()
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\yii\proyecto1\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/proyecto1/clientes/create
+in C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\create.php (3)
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (14)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 15:37:35 [error] [php] include(nombre_cliente.php): Failed to open stream: No such file or directory (C:\xampp\htdocs\yii\framework\YiiBase.php:463)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\YiiBase.php(463): include()
+#1 unknown(0): autoload()
+#2 C:\xampp\htdocs\yii\framework\YiiBase.php(310): class_exists()
+#3 C:\xampp\htdocs\yii\framework\validators\CValidator.php(174): import()
+#4 C:\xampp\htdocs\yii\framework\base\CModel.php(287): createValidator()
+#5 C:\xampp\htdocs\yii\framework\base\CModel.php(260): Clientes->createValidators()
+#6 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2491): Clientes->getValidators()
+#7 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1554): activeInputField()
+#8 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(793): activeTextField()
+#9 C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\create.php(3): CActiveForm->textField()
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): ClientesController->renderInternal()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(872): ClientesController->renderFile()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(785): ClientesController->renderPartial()
+#14 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(14): ClientesController->render()
+#15 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionCreate()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(286): ClientesController->runAction()
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ClientesController->run()
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\yii\proyecto1\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/proyecto1/clientes/create
+in C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\create.php (3)
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (14)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 16:22:32 [error] [php] include(nombre_cliente.php): Failed to open stream: No such file or directory (C:\xampp\htdocs\yii\framework\YiiBase.php:463)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\YiiBase.php(463): include()
+#1 unknown(0): autoload()
+#2 C:\xampp\htdocs\yii\framework\YiiBase.php(310): class_exists()
+#3 C:\xampp\htdocs\yii\framework\validators\CValidator.php(174): import()
+#4 C:\xampp\htdocs\yii\framework\base\CModel.php(287): createValidator()
+#5 C:\xampp\htdocs\yii\framework\base\CModel.php(260): Clientes->createValidators()
+#6 C:\xampp\htdocs\yii\framework\base\CModel.php(158): Clientes->getValidators()
+#7 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(810): Clientes->validate()
+#8 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(9): Clientes->save()
+#9 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionIndex()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(286): ClientesController->runAction()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ClientesController->run()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\yii\proyecto1\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/proyecto1/clientes/index
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (9)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 16:39:16 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "cliente/index". in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('cliente/index')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/proyecto1/cliente/index
+---
+2022/02/08 16:39:26 [error] [php] include(nombre_cliente.php): Failed to open stream: No such file or directory (C:\xampp\htdocs\yii\framework\YiiBase.php:463)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\YiiBase.php(463): include()
+#1 unknown(0): autoload()
+#2 C:\xampp\htdocs\yii\framework\YiiBase.php(310): class_exists()
+#3 C:\xampp\htdocs\yii\framework\validators\CValidator.php(174): import()
+#4 C:\xampp\htdocs\yii\framework\base\CModel.php(287): createValidator()
+#5 C:\xampp\htdocs\yii\framework\base\CModel.php(260): Clientes->createValidators()
+#6 C:\xampp\htdocs\yii\framework\base\CModel.php(158): Clientes->getValidators()
+#7 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(810): Clientes->validate()
+#8 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(9): Clientes->save()
+#9 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionIndex()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(286): ClientesController->runAction()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ClientesController->run()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\yii\proyecto1\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/proyecto1/clientes/index
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (9)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 16:58:39 [error] [php] include(nombre_cliente.php): Failed to open stream: No such file or directory (C:\xampp\htdocs\yii\framework\YiiBase.php:463)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\YiiBase.php(463): include()
+#1 unknown(0): autoload()
+#2 C:\xampp\htdocs\yii\framework\YiiBase.php(310): class_exists()
+#3 C:\xampp\htdocs\yii\framework\validators\CValidator.php(174): import()
+#4 C:\xampp\htdocs\yii\framework\base\CModel.php(287): createValidator()
+#5 C:\xampp\htdocs\yii\framework\base\CModel.php(260): Clientes->createValidators()
+#6 C:\xampp\htdocs\yii\framework\base\CModel.php(158): Clientes->getValidators()
+#7 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(810): Clientes->validate()
+#8 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(12): Clientes->save()
+#9 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionIndex()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(286): ClientesController->runAction()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ClientesController->run()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\yii\proyecto1\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/proyecto1/clientes/index
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (12)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 17:09:11 [error] [php] include(nombre_cliente.php): Failed to open stream: No such file or directory (C:\xampp\htdocs\yii\framework\YiiBase.php:463)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\YiiBase.php(463): include()
+#1 unknown(0): autoload()
+#2 C:\xampp\htdocs\yii\framework\YiiBase.php(310): class_exists()
+#3 C:\xampp\htdocs\yii\framework\validators\CValidator.php(174): import()
+#4 C:\xampp\htdocs\yii\framework\base\CModel.php(287): createValidator()
+#5 C:\xampp\htdocs\yii\framework\base\CModel.php(260): Clientes->createValidators()
+#6 C:\xampp\htdocs\yii\framework\base\CModel.php(158): Clientes->getValidators()
+#7 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(810): Clientes->validate()
+#8 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(12): Clientes->save()
+#9 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionIndex()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(286): ClientesController->runAction()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ClientesController->run()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\yii\proyecto1\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/proyecto1/clientes/index
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (12)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 17:13:03 [error] [php] include(nombre_cliente.php): Failed to open stream: No such file or directory (C:\xampp\htdocs\yii\framework\YiiBase.php:463)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\YiiBase.php(463): include()
+#1 unknown(0): autoload()
+#2 C:\xampp\htdocs\yii\framework\YiiBase.php(310): class_exists()
+#3 C:\xampp\htdocs\yii\framework\validators\CValidator.php(174): import()
+#4 C:\xampp\htdocs\yii\framework\base\CModel.php(287): createValidator()
+#5 C:\xampp\htdocs\yii\framework\base\CModel.php(260): Clientes->createValidators()
+#6 C:\xampp\htdocs\yii\framework\base\CModel.php(158): Clientes->getValidators()
+#7 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(810): Clientes->validate()
+#8 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(12): Clientes->save()
+#9 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionIndex()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(286): ClientesController->runAction()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ClientesController->run()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\yii\proyecto1\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/proyecto1/clientes/index
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (12)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 17:18:22 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '112' for key 'cedula'. The SQL statement executed was: INSERT INTO `clientes` (`cedula`, `nombre_cliente`, `telefono`, `email`, `genero`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (12)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 17:18:22 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '112' for key 'cedula'. The SQL statement executed was: INSERT INTO `clientes` (`cedula`, `nombre_cliente`, `telefono`, `email`, `genero`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4) in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1083): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(12): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/index')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/proyecto1/clientes/index
+---
+2022/02/08 17:22:07 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '112' for key 'cedula'. The SQL statement executed was: INSERT INTO `clientes` (`cedula`, `nombre_cliente`, `telefono`, `email`, `genero`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (12)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 17:22:07 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '112' for key 'cedula'. The SQL statement executed was: INSERT INTO `clientes` (`cedula`, `nombre_cliente`, `telefono`, `email`, `genero`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4) in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1083): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(12): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/index')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/proyecto1/clientes/index
+---
+2022/02/08 17:22:11 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '112' for key 'cedula'. The SQL statement executed was: INSERT INTO `clientes` (`cedula`, `nombre_cliente`, `telefono`, `email`, `genero`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (12)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 17:22:11 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '112' for key 'cedula'. The SQL statement executed was: INSERT INTO `clientes` (`cedula`, `nombre_cliente`, `telefono`, `email`, `genero`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4) in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1083): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(12): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/index')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/proyecto1/clientes/index
+---
+2022/02/08 17:22:39 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '112' for key 'cedula'. The SQL statement executed was: INSERT INTO `clientes` (`cedula`, `nombre_cliente`, `telefono`, `email`, `genero`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (12)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 17:22:39 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '112' for key 'cedula'. The SQL statement executed was: INSERT INTO `clientes` (`cedula`, `nombre_cliente`, `telefono`, `email`, `genero`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4) in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1083): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(12): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/index')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/proyecto1/clientes/index
+---
+2022/02/08 17:35:39 [warning] [application] Failed to set unsafe attribute "cedula" of "Clientes".
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (19)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 17:35:39 [warning] [application] Failed to set unsafe attribute "nombre_cliente" of "Clientes".
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (19)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 17:35:39 [warning] [application] Failed to set unsafe attribute "telefono" of "Clientes".
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (19)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 17:35:39 [warning] [application] Failed to set unsafe attribute "email" of "Clientes".
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (19)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 17:35:39 [warning] [application] Failed to set unsafe attribute "genero" of "Clientes".
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (19)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 17:36:43 [warning] [application] Failed to set unsafe attribute "cedula" of "Clientes".
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (19)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 17:36:43 [warning] [application] Failed to set unsafe attribute "nombre_cliente" of "Clientes".
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (19)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 17:36:43 [warning] [application] Failed to set unsafe attribute "telefono" of "Clientes".
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (19)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 17:36:43 [warning] [application] Failed to set unsafe attribute "email" of "Clientes".
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (19)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 17:36:43 [warning] [application] Failed to set unsafe attribute "genero" of "Clientes".
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (19)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 17:36:43 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'cedula'. The SQL statement executed was: INSERT INTO `clientes` (`id`) VALUES (NULL).
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (21)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 17:36:43 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'cedula'. The SQL statement executed was: INSERT INTO `clientes` (`id`) VALUES (NULL) in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1083): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(21): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/create')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/create
+HTTP_REFERER=http://localhost/yii/proyecto1/index.php/clientes/create
+---
+2022/02/08 17:43:05 [warning] [application] Failed to set unsafe attribute "cedula" of "Clientes".
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (20)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 17:43:05 [warning] [application] Failed to set unsafe attribute "nombre_cliente" of "Clientes".
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (20)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 17:43:05 [warning] [application] Failed to set unsafe attribute "telefono" of "Clientes".
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (20)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 17:43:05 [warning] [application] Failed to set unsafe attribute "email" of "Clientes".
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (20)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 17:43:05 [warning] [application] Failed to set unsafe attribute "genero" of "Clientes".
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (20)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 17:43:05 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'cedula'. The SQL statement executed was: INSERT INTO `clientes` (`id`) VALUES (NULL).
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (22)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 17:43:05 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'cedula'. The SQL statement executed was: INSERT INTO `clientes` (`id`) VALUES (NULL) in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1083): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(22): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/create')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/create
+HTTP_REFERER=http://localhost/yii/proyecto1/index.php/clientes/create
+---
+2022/02/08 19:49:30 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1103114951' for key 'cedula'. The SQL statement executed was: INSERT INTO `clientes` (`cedula`, `nombre_cliente`, `telefono`, `email`, `genero`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (13)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 19:49:30 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1103114951' for key 'cedula'. The SQL statement executed was: INSERT INTO `clientes` (`cedula`, `nombre_cliente`, `telefono`, `email`, `genero`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4) in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1083): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(13): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/index')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/proyecto1/clientes/index
+---
+2022/02/08 19:52:24 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1103114952' for key 'cedula'. The SQL statement executed was: INSERT INTO `clientes` (`cedula`, `nombre_cliente`, `telefono`, `email`, `genero`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (13)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 19:52:24 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1103114952' for key 'cedula'. The SQL statement executed was: INSERT INTO `clientes` (`cedula`, `nombre_cliente`, `telefono`, `email`, `genero`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4) in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1083): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(13): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/index')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/proyecto1/clientes/index
+---
+2022/02/08 19:55:52 [warning] [application] Failed to set unsafe attribute "cedula" of "Clientes".
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (28)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 19:55:52 [warning] [application] Failed to set unsafe attribute "nombre_cliente" of "Clientes".
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (28)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 19:55:52 [warning] [application] Failed to set unsafe attribute "telefono" of "Clientes".
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (28)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 19:55:52 [warning] [application] Failed to set unsafe attribute "email" of "Clientes".
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (28)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 19:55:52 [warning] [application] Failed to set unsafe attribute "genero" of "Clientes".
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (28)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 19:55:52 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1103114953' for key 'cedula'. The SQL statement executed was: INSERT INTO `clientes` (`cedula`, `nombre_cliente`, `telefono`, `email`, `genero`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (13)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 19:55:52 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1103114953' for key 'cedula'. The SQL statement executed was: INSERT INTO `clientes` (`cedula`, `nombre_cliente`, `telefono`, `email`, `genero`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4) in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1083): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(13): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/index')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/index
+HTTP_REFERER=http://localhost/yii/proyecto1/index.php/clientes/create
+---
+2022/02/08 20:00:55 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1103114953' for key 'cedula'. The SQL statement executed was: INSERT INTO `clientes` (`cedula`, `nombre_cliente`, `telefono`, `email`, `genero`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (13)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 20:00:55 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1103114953' for key 'cedula'. The SQL statement executed was: INSERT INTO `clientes` (`cedula`, `nombre_cliente`, `telefono`, `email`, `genero`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4) in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1083): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(13): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/index')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/proyecto1/clientes/index
+---
+2022/02/08 20:03:37 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1103114953' for key 'cedula'. The SQL statement executed was: INSERT INTO `clientes` (`cedula`, `nombre_cliente`, `telefono`, `email`, `genero`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (13)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 20:03:37 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1103114953' for key 'cedula'. The SQL statement executed was: INSERT INTO `clientes` (`cedula`, `nombre_cliente`, `telefono`, `email`, `genero`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4) in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1083): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(13): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/index')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/proyecto1/clientes/index
+---
+2022/02/08 20:04:57 [warning] [application] Failed to set unsafe attribute "cedula" of "Clientes".
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (28)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 20:04:57 [warning] [application] Failed to set unsafe attribute "nombre_cliente" of "Clientes".
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (28)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 20:04:57 [warning] [application] Failed to set unsafe attribute "telefono" of "Clientes".
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (28)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 20:04:57 [warning] [application] Failed to set unsafe attribute "email" of "Clientes".
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (28)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 20:04:57 [warning] [application] Failed to set unsafe attribute "genero" of "Clientes".
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (28)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 20:04:57 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1103114959' for key 'cedula'. The SQL statement executed was: INSERT INTO `clientes` (`cedula`, `nombre_cliente`, `telefono`, `email`, `genero`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (13)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 20:04:57 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1103114959' for key 'cedula'. The SQL statement executed was: INSERT INTO `clientes` (`cedula`, `nombre_cliente`, `telefono`, `email`, `genero`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4) in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1083): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(13): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/index')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/index
+HTTP_REFERER=http://localhost/yii/proyecto1/index.php/clientes/create
+---
+2022/02/08 20:05:54 [warning] [application] Failed to set unsafe attribute "cedula" of "Clientes".
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (20)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 20:05:54 [warning] [application] Failed to set unsafe attribute "nombre_cliente" of "Clientes".
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (20)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 20:05:54 [warning] [application] Failed to set unsafe attribute "telefono" of "Clientes".
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (20)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 20:05:54 [warning] [application] Failed to set unsafe attribute "email" of "Clientes".
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (20)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 20:05:54 [warning] [application] Failed to set unsafe attribute "genero" of "Clientes".
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (20)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 20:05:54 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'cedula'. The SQL statement executed was: INSERT INTO `clientes` (`id`) VALUES (NULL).
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (22)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 20:05:54 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'cedula'. The SQL statement executed was: INSERT INTO `clientes` (`id`) VALUES (NULL) in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1083): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(22): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/create')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/create
+HTTP_REFERER=http://localhost/yii/proyecto1/index.php/clientes/create
+---
+2022/02/08 21:10:53 [error] [php] Undefined variable $model (C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\index.php:13)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): ClientesController->renderInternal()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): ClientesController->renderFile()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): ClientesController->renderPartial()
+#4 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(8): ClientesController->render()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionIndex()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(286): ClientesController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ClientesController->run()
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\yii\proyecto1\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/proyecto1/clientes/index
+in C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\index.php (13)
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (8)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 21:12:15 [error] [php] Undefined variable $model (C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\index.php:5)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): ClientesController->renderInternal()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): ClientesController->renderFile()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): ClientesController->renderPartial()
+#4 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(8): ClientesController->render()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionIndex()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(286): ClientesController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ClientesController->run()
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\yii\proyecto1\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/proyecto1/clientes/index
+in C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\index.php (5)
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (8)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 21:13:50 [error] [php] Undefined variable $data (C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\index.php:18)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): ClientesController->renderInternal()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): ClientesController->renderFile()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): ClientesController->renderPartial()
+#4 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(8): ClientesController->render()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionIndex()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(286): ClientesController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ClientesController->run()
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\yii\proyecto1\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/proyecto1/clientes/index
+in C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\index.php (18)
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (8)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 21:25:29 [error] [php] Undefined variable $dataProvider (C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\index.php:27)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): ClientesController->renderInternal()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): ClientesController->renderFile()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): ClientesController->renderPartial()
+#4 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(8): ClientesController->render()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionIndex()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(286): ClientesController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ClientesController->run()
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\yii\proyecto1\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/proyecto1/index.php/clientes/index
+in C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\index.php (27)
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (8)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 21:29:24 [error] [php] Undefined variable $model (C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\index.php:16)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): ClientesController->renderInternal()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): ClientesController->renderFile()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): ClientesController->renderPartial()
+#4 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(8): ClientesController->render()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionIndex()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(286): ClientesController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ClientesController->run()
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\yii\proyecto1\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/proyecto1/index.php/clientes/index
+in C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\index.php (16)
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (8)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 21:29:52 [error] [php] Undefined variable $model (C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\index.php:21)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): ClientesController->renderInternal()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): ClientesController->renderFile()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): ClientesController->renderPartial()
+#4 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(8): ClientesController->render()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionIndex()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(286): ClientesController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ClientesController->run()
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\yii\proyecto1\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/proyecto1/index.php/clientes/index
+in C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\index.php (21)
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (8)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 21:30:09 [error] [php] Undefined variable $model (C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\index.php:25)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): ClientesController->renderInternal()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): ClientesController->renderFile()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): ClientesController->renderPartial()
+#4 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(8): ClientesController->render()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionIndex()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(286): ClientesController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ClientesController->run()
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\yii\proyecto1\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/proyecto1/index.php/clientes/index
+in C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\index.php (25)
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (8)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 21:30:24 [error] [php] Undefined variable $model (C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\index.php:27)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): ClientesController->renderInternal()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): ClientesController->renderFile()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): ClientesController->renderPartial()
+#4 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(8): ClientesController->render()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionIndex()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(286): ClientesController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ClientesController->run()
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\yii\proyecto1\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/proyecto1/index.php/clientes/index
+in C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\index.php (27)
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (8)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 21:30:35 [error] [exception.CException] CException: Please specify the "data" property. in C:\xampp\htdocs\yii\framework\zii\widgets\CDetailView.php:139
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(147): CDetailView->init()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(181): CBaseController->createWidget('zii.widgets.CDe...', Array)
+#2 C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\index.php(29): CBaseController->widget('zii.widgets.CDe...', Array)
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#7 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(8): CController->render('index', Array)
+#8 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionIndex()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/index')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/index
+---
+2022/02/08 21:32:20 [error] [php] Undefined variable $model (C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\index.php:8)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): ClientesController->renderInternal()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): ClientesController->renderFile()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): ClientesController->renderPartial()
+#4 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(8): ClientesController->render()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionIndex()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(286): ClientesController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ClientesController->run()
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\yii\proyecto1\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/proyecto1/index.php/clientes/index
+in C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\index.php (8)
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (8)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/08 23:38:57 [error] [exception.CException] CException: CActiveForm and its behaviors do not have a method or closure named "select". in C:\xampp\htdocs\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\create.php(34): CComponent->__call('select', Array)
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('create', Array, true)
+#5 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(23): CController->render('create', Array)
+#6 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionCreate()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/create')
+#12 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/create
+HTTP_REFERER=http://localhost/yii/proyecto1/index.php/clientes/index/111138
+---
+2022/02/09 00:05:29 [error] [exception.CException] CException: Clientes and its behaviors do not have a method or closure named "getMenuGender". in C:\xampp\htdocs\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(229): CComponent->__call('getMenuGender', Array)
+#1 C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\create.php(34): CActiveRecord->__call('getMenuGender', Array)
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('create', Array, true)
+#6 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(23): CController->render('create', Array)
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionCreate()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/create')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/create
+HTTP_REFERER=http://localhost/yii/proyecto1/index.php/clientes/create
+---
+2022/02/09 17:14:14 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "compra". in C:\xampp\htdocs\yii\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('compra')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('compra')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/compra')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/proyecto1/clientes/compra
+---
+2022/02/09 17:14:23 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "compras". in C:\xampp\htdocs\yii\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('compras')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('compras')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/compra...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/proyecto1/clientes/compras
+---
+2022/02/09 18:02:19 [error] [php] Undefined variable $mode (C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\comprar.php:4)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): ClientesController->renderInternal()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): ClientesController->renderFile()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): ClientesController->renderPartial()
+#4 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(40): ClientesController->render()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionComprar()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(286): ClientesController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ClientesController->run()
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\yii\proyecto1\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/proyecto1/clientes/comprar
+in C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\comprar.php (4)
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (40)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/09 18:02:43 [error] [exception.ArgumentCountError] ArgumentCountError: Too few arguments to function CActiveForm::labelEx(), 1 passed in C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\comprar.php on line 16 and at least 2 expected in C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php:599
+Stack trace:
+#0 C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\comprar.php(16): CActiveForm->labelEx(Object(Camposextras))
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('comprar', Array, true)
+#5 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(40): CController->render('comprar', Array)
+#6 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionComprar()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('comprar')
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/compra...')
+#12 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/proyecto1/clientes/comprar
+---
+2022/02/09 18:04:44 [error] [php] Undefined variable $modeloCliente (C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\comprar.php:22)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): ClientesController->renderInternal()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): ClientesController->renderFile()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): ClientesController->renderPartial()
+#4 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(40): ClientesController->render()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionComprar()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(286): ClientesController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ClientesController->run()
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\yii\proyecto1\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/proyecto1/clientes/comprar
+in C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\comprar.php (22)
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (40)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/09 18:10:07 [error] [php] Undefined variable $modeloCliente (C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\comprar.php:22)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): ClientesController->renderInternal()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): ClientesController->renderFile()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): ClientesController->renderPartial()
+#4 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(40): ClientesController->render()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionComprar()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(286): ClientesController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ClientesController->run()
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\yii\proyecto1\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/proyecto1/clientes/comprar
+in C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\comprar.php (22)
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (40)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/09 18:10:51 [error] [php] Undefined variable $clientes (C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\comprar.php:22)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): ClientesController->renderInternal()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): ClientesController->renderFile()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): ClientesController->renderPartial()
+#4 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(40): ClientesController->render()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionComprar()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(286): ClientesController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ClientesController->run()
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\yii\proyecto1\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/proyecto1/clientes/comprar
+in C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\comprar.php (22)
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (40)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/09 18:15:19 [error] [exception.CException] CException: ClientesController cannot find the requested view "_sicompra". in C:\xampp\htdocs\yii\framework\web\CController.php:881
+Stack trace:
+#0 C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\comprar.php(22): CController->renderPartial('_sicompra', Array)
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('comprar', Array, true)
+#5 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(40): CController->render('comprar', Array)
+#6 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionComprar()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('comprar')
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/compra...')
+#12 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/proyecto1/clientes/comprar
+---
+2022/02/09 18:21:34 [error] [exception.CException] CException: ClientesController cannot find the requested view "_sicompra". in C:\xampp\htdocs\yii\framework\web\CController.php:881
+Stack trace:
+#0 C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\comprar.php(22): CController->renderPartial('_sicompra', Array)
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('comprar', Array, true)
+#5 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(40): CController->render('comprar', Array)
+#6 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionComprar()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('comprar')
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/compra...')
+#12 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/proyecto1/clientes/comprar
+---
+2022/02/09 18:25:42 [error] [exception.CException] CException: ClientesController cannot find the requested view "_sicompra". in C:\xampp\htdocs\yii\framework\web\CController.php:881
+Stack trace:
+#0 C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\comprar.php(22): CController->renderPartial('_sicompra', Array)
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('comprar', Array, true)
+#5 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(40): CController->render('comprar', Array)
+#6 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionComprar()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('comprar')
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/compra...')
+#12 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/proyecto1/clientes/comprar
+---
+2022/02/09 18:37:30 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "compras". in C:\xampp\htdocs\yii\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('compras')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('compras')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/compra...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/proyecto1/clientes/compras
+---
+2022/02/09 18:38:23 [error] [php] Undefined variable $modeloCliente (C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\sicomprar.php:18)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): ClientesController->renderInternal()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): ClientesController->renderFile()
+#3 C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\comprar.php(22): ClientesController->renderPartial()
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): ClientesController->renderInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(872): ClientesController->renderFile()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(785): ClientesController->renderPartial()
+#8 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(40): ClientesController->render()
+#9 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionComprar()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(286): ClientesController->runAction()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ClientesController->run()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\yii\proyecto1\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/proyecto1/index.php/clientes/comprar
+in C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\sicomprar.php (18)
+in C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\comprar.php (22)
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (40)
+2022/02/09 18:39:10 [error] [exception.TypeError] TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, Clientes given in C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php:118
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(118): htmlspecialchars(Object(Clientes), 3, 'UTF-8')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2869): CHtml::encode(Object(Clientes))
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(173): CHtml::renderAttributes(Array)
+#3 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2510): CHtml::tag('input', Array)
+#4 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1809): CHtml::activeInputField('hidden', Object(Camposextras), 'id_externo', Array)
+#5 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(824): CHtml::activeHiddenField(Object(Camposextras), 'id_externo', Array)
+#6 C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\sicomprar.php(18): CActiveForm->hiddenField(Object(Camposextras), 'id_externo', Array)
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#10 C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\comprar.php(22): CController->renderPartial('sicomprar', Array)
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('comprar', Array, true)
+#15 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(40): CController->render('comprar', Array)
+#16 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionComprar()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('comprar')
+#21 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/compra...')
+#22 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/comprar
+---
+2022/02/09 19:37:47 [error] [exception.TypeError] TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, Clientes given in C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php:118
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(118): htmlspecialchars(Object(Clientes), 3, 'UTF-8')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2869): CHtml::encode(Object(Clientes))
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(173): CHtml::renderAttributes(Array)
+#3 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2510): CHtml::tag('input', Array)
+#4 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1809): CHtml::activeInputField('hidden', Object(Camposextras), 'id_externo', Array)
+#5 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(824): CHtml::activeHiddenField(Object(Camposextras), 'id_externo', Array)
+#6 C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\sicomprar.php(18): CActiveForm->hiddenField(Object(Camposextras), 'id_externo', Array)
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#10 C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\comprar.php(22): CController->renderPartial('sicomprar', Array)
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('comprar', Array, true)
+#15 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(40): CController->render('comprar', Array)
+#16 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionComprar()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('comprar')
+#21 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/compra...')
+#22 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/comprar
+---
+2022/02/09 19:39:25 [error] [exception.CException] CException: Property "Camposextras.sicomprar" is not defined. in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('sicomprar')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2784): CActiveRecord->__get('sicomprar')
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2008): CHtml::resolveValue(Object(Camposextras), 'sicomprar')
+#3 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(915): CHtml::activeDropDownList(Object(Camposextras), 'sicomprar', Array, Array)
+#4 C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\sicomprar.php(11): CActiveForm->dropDownList(Object(Camposextras), 'sicomprar', Array, Array)
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\comprar.php(22): CController->renderPartial('sicomprar', Array)
+#9 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('comprar', Array, true)
+#13 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(40): CController->render('comprar', Array)
+#14 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionComprar()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('comprar')
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/compra...')
+#20 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/comprar
+---
+2022/02/09 19:42:26 [error] [exception.CException] CException: Property "Camposextras.sicomprar" is not defined. in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('sicomprar')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2784): CActiveRecord->__get('sicomprar')
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2008): CHtml::resolveValue(Object(Camposextras), 'sicomprar')
+#3 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(915): CHtml::activeDropDownList(Object(Camposextras), 'sicomprar', Array, Array)
+#4 C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\sicomprar.php(11): CActiveForm->dropDownList(Object(Camposextras), 'sicomprar', Array, Array)
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\comprar.php(22): CController->renderPartial('sicomprar', Array)
+#9 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('comprar', Array, true)
+#13 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(40): CController->render('comprar', Array)
+#14 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionComprar()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('comprar')
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/compra...')
+#20 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/comprar
+---
+2022/02/09 20:00:07 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\xampp\htdocs\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('comprar')
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/compra...')
+#5 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/comprar
+---
+2022/02/09 20:01:14 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\xampp\htdocs\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('comprar')
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/compra...')
+#5 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/comprar
+---
+2022/02/09 20:01:19 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\xampp\htdocs\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('comprar')
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/compra...')
+#5 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/comprar
+---
+2022/02/09 20:01:22 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "comprar}". in C:\xampp\htdocs\yii\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('comprar}')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('comprar}')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/compra...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/comprar%7D
+---
+2022/02/09 20:01:27 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\xampp\htdocs\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('comprar')
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/compra...')
+#5 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/comprar
+---
+2022/02/09 20:04:02 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\xampp\htdocs\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('comprar')
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/compra...')
+#5 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/comprar
+---
+2022/02/09 20:11:29 [error] [php] Undefined variable $modelCliente (C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\comprar.php:3)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): ClientesController->renderInternal()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): ClientesController->renderFile()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): ClientesController->renderPartial()
+#4 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(40): ClientesController->render()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionComprar()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(286): ClientesController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ClientesController->run()
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\yii\proyecto1\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/proyecto1/index.php/clientes/comprar
+in C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\comprar.php (3)
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (40)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/09 20:11:54 [error] [exception.CException] CException: ClientesController cannot find the requested view "_sicomprar". in C:\xampp\htdocs\yii\framework\web\CController.php:881
+Stack trace:
+#0 C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\comprar.php(21): CController->renderPartial('_sicomprar', Array)
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('comprar', Array, true)
+#5 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(40): CController->render('comprar', Array)
+#6 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionComprar()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('comprar')
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/compra...')
+#12 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/comprar
+---
+2022/02/09 20:13:55 [error] [exception.CException] CException: ClientesController cannot find the requested view "_sicomprar". in C:\xampp\htdocs\yii\framework\web\CController.php:881
+Stack trace:
+#0 C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\comprar.php(21): CController->renderPartial('_sicomprar', Array)
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('comprar', Array, true)
+#5 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(40): CController->render('comprar', Array)
+#6 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionComprar()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('comprar')
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/compra...')
+#12 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/comprar
+---
+2022/02/09 20:14:23 [error] [exception.CException] CException: Property "Camposextras.si_comprar" is not defined. in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('si_comprar')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2784): CActiveRecord->__get('si_comprar')
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2008): CHtml::resolveValue(Object(Camposextras), 'si_comprar')
+#3 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(915): CHtml::activeDropDownList(Object(Camposextras), 'si_comprar', Array, Array)
+#4 C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\_sicompra.php(11): CActiveForm->dropDownList(Object(Camposextras), 'si_comprar', Array, Array)
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\comprar.php(21): CController->renderPartial('_sicompra', Array)
+#9 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('comprar', Array, true)
+#13 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(40): CController->render('comprar', Array)
+#14 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionComprar()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('comprar')
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/compra...')
+#20 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/comprar
+---
+2022/02/09 20:16:50 [error] [exception.CException] CException: Property "Camposextras.si_compra" is not defined. in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('si_compra')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2784): CActiveRecord->__get('si_compra')
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2008): CHtml::resolveValue(Object(Camposextras), 'si_compra')
+#3 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(915): CHtml::activeDropDownList(Object(Camposextras), 'si_compra', Array, Array)
+#4 C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\_sicompra.php(11): CActiveForm->dropDownList(Object(Camposextras), 'si_compra', Array, Array)
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\comprar.php(21): CController->renderPartial('_sicompra', Array)
+#9 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('comprar', Array, true)
+#13 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(40): CController->render('comprar', Array)
+#14 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionComprar()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('comprar')
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/compra...')
+#20 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/comprar
+---
+2022/02/09 20:18:09 [error] [exception.CException] CException: Property "Camposextras.si_compra" is not defined. in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('si_compra')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2784): CActiveRecord->__get('si_compra')
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2008): CHtml::resolveValue(Object(Camposextras), 'si_compra')
+#3 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(915): CHtml::activeDropDownList(Object(Camposextras), 'si_compra', Array, Array)
+#4 C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\_sicompra.php(11): CActiveForm->dropDownList(Object(Camposextras), 'si_compra', Array, Array)
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\comprar.php(21): CController->renderPartial('_sicompra', Array)
+#9 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('comprar', Array, true)
+#13 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(40): CController->render('comprar', Array)
+#14 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionComprar()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('comprar')
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/compra...')
+#20 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/comprar
+---
+2022/02/09 20:18:10 [error] [exception.CException] CException: Property "Camposextras.si_compra" is not defined. in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('si_compra')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2784): CActiveRecord->__get('si_compra')
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2008): CHtml::resolveValue(Object(Camposextras), 'si_compra')
+#3 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(915): CHtml::activeDropDownList(Object(Camposextras), 'si_compra', Array, Array)
+#4 C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\_sicompra.php(11): CActiveForm->dropDownList(Object(Camposextras), 'si_compra', Array, Array)
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\comprar.php(21): CController->renderPartial('_sicompra', Array)
+#9 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('comprar', Array, true)
+#13 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(40): CController->render('comprar', Array)
+#14 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionComprar()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('comprar')
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/compra...')
+#20 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/comprar
+---
+2022/02/09 21:59:48 [error] [exception.CException] CException: Property "Camposextras.si_compra" is not defined. in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('si_compra')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2784): CActiveRecord->__get('si_compra')
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2008): CHtml::resolveValue(Object(Camposextras), 'si_compra')
+#3 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(915): CHtml::activeDropDownList(Object(Camposextras), 'si_compra', Array, Array)
+#4 C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\_sicompra.php(11): CActiveForm->dropDownList(Object(Camposextras), 'si_compra', Array, Array)
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\comprar.php(21): CController->renderPartial('_sicompra', Array)
+#9 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('comprar', Array, true)
+#13 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(40): CController->render('comprar', Array)
+#14 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionComprar()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('comprar')
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/compra...')
+#20 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/comprar
+---
+2022/02/09 22:17:20 [error] [exception.TypeError] TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, Clientes given in C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php:118
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(118): htmlspecialchars(Object(Clientes), 3, 'UTF-8')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2869): CHtml::encode(Object(Clientes))
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(173): CHtml::renderAttributes(Array)
+#3 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2510): CHtml::tag('input', Array)
+#4 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1809): CHtml::activeInputField('hidden', Object(Camposextras), 'id_externo', Array)
+#5 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(824): CHtml::activeHiddenField(Object(Camposextras), 'id_externo', Array)
+#6 C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\_sicompra.php(18): CActiveForm->hiddenField(Object(Camposextras), 'id_externo', Array)
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#10 C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\comprar.php(21): CController->renderPartial('_sicompra', Array)
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('comprar', Array, true)
+#15 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(40): CController->render('comprar', Array)
+#16 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionComprar()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('comprar')
+#21 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/compra...')
+#22 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/comprar
+---
+2022/02/09 22:19:00 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "createe". in C:\xampp\htdocs\yii\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('createe')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('createe')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/create...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/createe
+---
+2022/02/09 22:21:54 [error] [exception.TypeError] TypeError: urlencode(): Argument #1 ($string) must be of type string, Clientes given in C:\xampp\htdocs\yii\framework\web\CUrlManager.php:442
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CUrlManager.php(442): urlencode(Object(Clientes))
+#1 C:\xampp\htdocs\yii\framework\web\CUrlManager.php(800): CUrlManager->createPathInfo(Array, '=', '&')
+#2 C:\xampp\htdocs\yii\framework\web\CUrlManager.php(302): CUrlRule->createUrl(Object(CUrlManager), 'clientes/compra...', Array, '&')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(561): CUrlManager->createUrl('clientes/compra...', Array, '&')
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(970): CApplication->createUrl('clientes/compra...', Array, '&')
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(1031): CController->createUrl('clientes/compra...', Array)
+#6 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(19): CController->redirect(Array)
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionCreate()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/create')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/create
+HTTP_REFERER=http://localhost/yii/proyecto1/index.php/clientes/create
+---
+2022/02/09 22:23:25 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '12345231' for key 'cedula'. The SQL statement executed was: INSERT INTO `clientes` (`cedula`, `nombre_cliente`, `telefono`, `email`, `genero`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (18)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/09 22:23:25 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '12345231' for key 'cedula'. The SQL statement executed was: INSERT INTO `clientes` (`cedula`, `nombre_cliente`, `telefono`, `email`, `genero`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4) in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1083): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(18): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/create')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/create
+HTTP_REFERER=http://localhost/yii/proyecto1/index.php/clientes/create
+---
+2022/02/09 22:23:56 [error] [exception.TypeError] TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, Clientes given in C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php:118
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(118): htmlspecialchars(Object(Clientes), 3, 'UTF-8')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2869): CHtml::encode(Object(Clientes))
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(173): CHtml::renderAttributes(Array)
+#3 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2510): CHtml::tag('input', Array)
+#4 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1809): CHtml::activeInputField('hidden', Object(Camposextras), 'id_externo', Array)
+#5 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(824): CHtml::activeHiddenField(Object(Camposextras), 'id_externo', Array)
+#6 C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\_sicompra.php(18): CActiveForm->hiddenField(Object(Camposextras), 'id_externo', Array)
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#10 C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\comprar.php(21): CController->renderPartial('_sicompra', Array)
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('comprar', Array, true)
+#15 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(40): CController->render('comprar', Array)
+#16 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionComprar()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('comprar')
+#21 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/compra...')
+#22 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/comprar
+---
+2022/02/09 22:29:37 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\xampp\htdocs\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('comprar')
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/compra...')
+#5 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/comprar
+---
+2022/02/09 22:29:46 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\xampp\htdocs\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('comprar')
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/compra...')
+#5 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/comprar
+---
+2022/02/09 22:30:38 [error] [exception.TypeError] TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, Clientes given in C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php:118
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(118): htmlspecialchars(Object(Clientes), 3, 'UTF-8')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2869): CHtml::encode(Object(Clientes))
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(173): CHtml::renderAttributes(Array)
+#3 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2510): CHtml::tag('input', Array)
+#4 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1809): CHtml::activeInputField('hidden', Object(Camposextras), 'id_externo', Array)
+#5 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(824): CHtml::activeHiddenField(Object(Camposextras), 'id_externo', Array)
+#6 C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\_sicompra.php(18): CActiveForm->hiddenField(Object(Camposextras), 'id_externo', Array)
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#10 C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\comprar.php(21): CController->renderPartial('_sicompra', Array)
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('comprar', Array, true)
+#15 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(40): CController->render('comprar', Array)
+#16 [internal function]: ClientesController->actionComprar('111144')
+#17 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(ClientesController), Array)
+#18 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ClientesController), Object(ReflectionMethod), Array)
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#21 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('comprar')
+#23 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/compra...')
+#24 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#25 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/comprar/111144
+HTTP_REFERER=http://localhost/yii/proyecto1/index.php/clientes/create
+---
+2022/02/09 22:35:14 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\xampp\htdocs\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('comprar')
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/compra...')
+#5 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/comprar
+---
+2022/02/09 23:04:23 [error] [exception.CException] CException: ClientesController cannot find the requested view "create". in C:\xampp\htdocs\yii\framework\web\CController.php:881
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('create', Array, true)
+#1 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(18): CController->render('create', Array)
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionIndex()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/index')
+#8 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/index
+---
+2022/02/09 23:05:00 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\xampp\htdocs\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('comprar')
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/compra...')
+#5 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/comprar
+---
+2022/02/09 23:16:31 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\xampp\htdocs\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('comprar')
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/compra...')
+#5 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/comprar
+---
+2022/02/09 23:17:35 [error] [exception.TypeError] TypeError: urlencode(): Argument #1 ($string) must be of type string, Camposextras given in C:\xampp\htdocs\yii\framework\web\CUrlManager.php:442
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CUrlManager.php(442): urlencode(Object(Camposextras))
+#1 C:\xampp\htdocs\yii\framework\web\CUrlManager.php(800): CUrlManager->createPathInfo(Array, '=', '&')
+#2 C:\xampp\htdocs\yii\framework\web\CUrlManager.php(302): CUrlRule->createUrl(Object(CUrlManager), 'clientes/compra...', Array, '&')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(561): CUrlManager->createUrl('clientes/compra...', Array, '&')
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(970): CApplication->createUrl('clientes/compra...', Array, '&')
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(1031): CController->createUrl('clientes/compra...', Array)
+#6 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(30): CController->redirect(Array)
+#7 [internal function]: ClientesController->actionComprar('111146')
+#8 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(ClientesController), Array)
+#9 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ClientesController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('comprar')
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/compra...')
+#15 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/comprar/111146
+HTTP_REFERER=http://localhost/yii/proyecto1/index.php/clientes/comprar/111146
+---
+2022/02/09 23:21:56 [error] [exception.TypeError] TypeError: urlencode(): Argument #1 ($string) must be of type string, Camposextras given in C:\xampp\htdocs\yii\framework\web\CUrlManager.php:442
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CUrlManager.php(442): urlencode(Object(Camposextras))
+#1 C:\xampp\htdocs\yii\framework\web\CUrlManager.php(800): CUrlManager->createPathInfo(Array, '=', '&')
+#2 C:\xampp\htdocs\yii\framework\web\CUrlManager.php(302): CUrlRule->createUrl(Object(CUrlManager), 'clientes/compra...', Array, '&')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(561): CUrlManager->createUrl('clientes/compra...', Array, '&')
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(970): CApplication->createUrl('clientes/compra...', Array, '&')
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(1031): CController->createUrl('clientes/compra...', Array)
+#6 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(30): CController->redirect(Array)
+#7 [internal function]: ClientesController->actionComprar('111146')
+#8 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(ClientesController), Array)
+#9 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ClientesController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('comprar')
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/compra...')
+#15 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/comprar/111146
+HTTP_REFERER=http://localhost/yii/proyecto1/index.php/clientes/comprar/111146
+---
+2022/02/09 23:26:11 [error] [exception.TypeError] TypeError: urlencode(): Argument #1 ($string) must be of type string, Camposextras given in C:\xampp\htdocs\yii\framework\web\CUrlManager.php:442
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CUrlManager.php(442): urlencode(Object(Camposextras))
+#1 C:\xampp\htdocs\yii\framework\web\CUrlManager.php(800): CUrlManager->createPathInfo(Array, '=', '&')
+#2 C:\xampp\htdocs\yii\framework\web\CUrlManager.php(302): CUrlRule->createUrl(Object(CUrlManager), 'clientes/compra...', Array, '&')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(561): CUrlManager->createUrl('clientes/compra...', Array, '&')
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(970): CApplication->createUrl('clientes/compra...', Array, '&')
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(1031): CController->createUrl('clientes/compra...', Array)
+#6 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(30): CController->redirect(Array)
+#7 [internal function]: ClientesController->actionComprar('111146')
+#8 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(ClientesController), Array)
+#9 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ClientesController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('comprar')
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/compra...')
+#15 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/comprar/111146
+HTTP_REFERER=http://localhost/yii/proyecto1/index.php/clientes/comprar/111146
+---
+2022/02/10 00:03:05 [error] [exception.TypeError] TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, Clientes given in C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php:118
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(118): htmlspecialchars(Object(Clientes), 3, 'UTF-8')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2869): CHtml::encode(Object(Clientes))
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(173): CHtml::renderAttributes(Array)
+#3 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2510): CHtml::tag('input', Array)
+#4 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1809): CHtml::activeInputField('hidden', Object(Camposextras), 'id_externo', Array)
+#5 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(824): CHtml::activeHiddenField(Object(Camposextras), 'id_externo', Array)
+#6 C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\comprar.php(25): CActiveForm->hiddenField(Object(Camposextras), 'id_externo', Array)
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('comprar', Array, true)
+#11 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(35): CController->render('comprar', Array)
+#12 [internal function]: ClientesController->actionComprar('111147')
+#13 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(ClientesController), Array)
+#14 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ClientesController), Object(ReflectionMethod), Array)
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('comprar')
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/compra...')
+#20 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/comprar/111147
+HTTP_REFERER=http://localhost/yii/proyecto1/index.php/clientes
+---
+2022/02/10 00:05:59 [error] [exception.TypeError] TypeError: urlencode(): Argument #1 ($string) must be of type string, Camposextras given in C:\xampp\htdocs\yii\framework\web\CUrlManager.php:442
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CUrlManager.php(442): urlencode(Object(Camposextras))
+#1 C:\xampp\htdocs\yii\framework\web\CUrlManager.php(800): CUrlManager->createPathInfo(Array, '=', '&')
+#2 C:\xampp\htdocs\yii\framework\web\CUrlManager.php(302): CUrlRule->createUrl(Object(CUrlManager), 'clientes/compra...', Array, '&')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(561): CUrlManager->createUrl('clientes/compra...', Array, '&')
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(970): CApplication->createUrl('clientes/compra...', Array, '&')
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(1031): CController->createUrl('clientes/compra...', Array)
+#6 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(30): CController->redirect(Array)
+#7 [internal function]: ClientesController->actionComprar('111148')
+#8 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(ClientesController), Array)
+#9 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ClientesController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('comprar')
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/compra...')
+#15 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/comprar/111148
+HTTP_REFERER=http://localhost/yii/proyecto1/index.php/clientes/comprar/111148
+---
+2022/02/10 00:11:26 [error] [exception.TypeError] TypeError: urlencode(): Argument #1 ($string) must be of type string, Camposextras given in C:\xampp\htdocs\yii\framework\web\CUrlManager.php:442
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CUrlManager.php(442): urlencode(Object(Camposextras))
+#1 C:\xampp\htdocs\yii\framework\web\CUrlManager.php(800): CUrlManager->createPathInfo(Array, '=', '&')
+#2 C:\xampp\htdocs\yii\framework\web\CUrlManager.php(302): CUrlRule->createUrl(Object(CUrlManager), 'clientes/compra...', Array, '&')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(561): CUrlManager->createUrl('clientes/compra...', Array, '&')
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(970): CApplication->createUrl('clientes/compra...', Array, '&')
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(1031): CController->createUrl('clientes/compra...', Array)
+#6 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(30): CController->redirect(Array)
+#7 [internal function]: ClientesController->actionComprar('111149')
+#8 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(ClientesController), Array)
+#9 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ClientesController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('comprar')
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/compra...')
+#15 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/comprar/111149
+HTTP_REFERER=http://localhost/yii/proyecto1/index.php/clientes/comprar/111149
+---
+2022/02/10 00:12:59 [error] [exception.CException] CException: ClientesController and its behaviors do not have a method or closure named "reder". in C:\xampp\htdocs\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(30): CComponent->__call('reder', Array)
+#1 [internal function]: ClientesController->actionComprar('111150')
+#2 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(ClientesController), Array)
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ClientesController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('comprar')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/compra...')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/comprar/111150
+HTTP_REFERER=http://localhost/yii/proyecto1/index.php/clientes/comprar/111150
+---
+2022/02/10 00:13:22 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1102113958' for key 'cedula'. The SQL statement executed was: INSERT INTO `clientes` (`cedula`, `nombre_cliente`, `telefono`, `email`, `genero`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (13)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/10 00:13:22 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1102113958' for key 'cedula'. The SQL statement executed was: INSERT INTO `clientes` (`cedula`, `nombre_cliente`, `telefono`, `email`, `genero`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4) in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1083): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(13): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes
+HTTP_REFERER=http://localhost/yii/proyecto1/index.php/clientes
+---
+2022/02/10 00:14:25 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1102113958' for key 'cedula'. The SQL statement executed was: INSERT INTO `clientes` (`cedula`, `nombre_cliente`, `telefono`, `email`, `genero`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (13)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/10 00:14:25 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1102113958' for key 'cedula'. The SQL statement executed was: INSERT INTO `clientes` (`cedula`, `nombre_cliente`, `telefono`, `email`, `genero`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4) in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1083): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(13): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes
+HTTP_REFERER=http://localhost/yii/proyecto1/index.php/clientes
+---
+2022/02/10 00:22:26 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1103112581' for key 'cedula'. The SQL statement executed was: INSERT INTO `clientes` (`cedula`, `nombre_cliente`, `telefono`, `email`, `genero`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (13)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/10 00:22:26 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1103112581' for key 'cedula'. The SQL statement executed was: INSERT INTO `clientes` (`cedula`, `nombre_cliente`, `telefono`, `email`, `genero`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4) in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1083): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(13): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/
+HTTP_REFERER=http://localhost/yii/proyecto1/index.php/clientes/
+---
+2022/02/10 00:25:42 [error] [exception.CException] CException: Property "Camposextras.cedula" is not defined. in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('cedula')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2784): CActiveRecord->__get('cedula')
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2507): CHtml::resolveValue(Object(Camposextras), 'cedula')
+#3 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1554): CHtml::activeInputField('text', Object(Camposextras), 'cedula', Array)
+#4 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(793): CHtml::activeTextField(Object(Camposextras), 'cedula', Array)
+#5 C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\index.php(20): CActiveForm->textField(Object(Camposextras), 'cedula')
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#10 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(36): CController->render('index', Array)
+#11 [internal function]: ClientesController->actionComprar('111156')
+#12 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(ClientesController), Array)
+#13 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ClientesController), Object(ReflectionMethod), Array)
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('comprar')
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/compra...')
+#19 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/comprar/111156
+HTTP_REFERER=http://localhost/yii/proyecto1/index.php/clientes/
+---
+2022/02/10 00:28:08 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "index". in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('index')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/proyecto1/index
+---
+2022/02/10 14:27:28 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\xampp\htdocs\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('comprar')
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/compra...')
+#5 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/proyecto1/clientes/comprar
+---
+2022/02/10 22:53:05 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\xampp\htdocs\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('comprar')
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/compra...')
+#5 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/comprar
+---
+2022/02/10 22:56:30 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\xampp\htdocs\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('comprar')
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/compra...')
+#5 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/comprar?view=about
+HTTP_REFERER=http://localhost/yii/proyecto1/index.php/clientes/index
+---
+2022/02/10 23:48:55 [error] [php] Undefined variable $model (C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\listar.php:6)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): ClientesController->renderInternal()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): ClientesController->renderFile()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): ClientesController->renderPartial()
+#4 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(45): ClientesController->render()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionListar()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(286): ClientesController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ClientesController->run()
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\yii\proyecto1\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/proyecto1/index.php/clientes/listar
+in C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\listar.php (6)
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (45)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/10 23:54:17 [error] [php] Undefined variable $model (C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\listar.php:6)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): ClientesController->renderInternal()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): ClientesController->renderFile()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): ClientesController->renderPartial()
+#4 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(45): ClientesController->render()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionListar()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(286): ClientesController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ClientesController->run()
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\yii\proyecto1\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/proyecto1/index.php/clientes/listar
+in C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\listar.php (6)
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (45)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/11 00:07:29 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "listarC". in C:\xampp\htdocs\yii\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('listarC')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('listarC')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/listar...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/listarC
+HTTP_REFERER=http://localhost/yii/proyecto1/index.php/clientes/listar
+---
+2022/02/11 00:08:49 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "listarC". in C:\xampp\htdocs\yii\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('listarC')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('listarC')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/listar...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/listarC
+HTTP_REFERER=http://localhost/yii/proyecto1/index.php/clientes/listar
+---
+2022/02/11 00:08:55 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "listarC". in C:\xampp\htdocs\yii\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('listarC')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('listarC')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/listar...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/listarC
+HTTP_REFERER=http://localhost/yii/proyecto1/index.php/clientes/listar
+---
+2022/02/11 00:10:18 [error] [php] Undefined variable $compras (C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\listarc.php:3)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): ClientesController->renderInternal()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): ClientesController->renderFile()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): ClientesController->renderPartial()
+#4 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(51): ClientesController->render()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionListarc()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(286): ClientesController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ClientesController->run()
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\yii\proyecto1\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/proyecto1/index.php/clientes/listarC
+in C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\listarc.php (3)
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (51)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/11 00:12:38 [error] [php] Undefined variable $compras (C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\listarc.php:3)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): ClientesController->renderInternal()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): ClientesController->renderFile()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): ClientesController->renderPartial()
+#4 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(51): ClientesController->render()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ClientesController->actionListarc()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(286): ClientesController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ClientesController->run()
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\yii\proyecto1\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/proyecto1/index.php/clientes/listarc
+in C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\listarc.php (3)
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (51)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/11 00:15:50 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "listarc". in C:\xampp\htdocs\yii\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('listarc')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('listarc')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/listar...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/proyecto1/index.php/clientes/listarc
+HTTP_REFERER=http://localhost/yii/proyecto1/index.php/clientes/listar
+---
+2022/02/11 01:57:58 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "index". in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('index')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii\proyecto1\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/proyecto1/index.php/index
+---
+2022/02/11 01:59:09 [error] [php] Attempt to read property "id" on null (C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\comprar.php:28)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): ClientesController->renderInternal()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): ClientesController->renderFile()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): ClientesController->renderPartial()
+#4 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(38): ClientesController->render()
+#5 unknown(0): ClientesController->actionComprar()
+#6 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs()
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(286): ClientesController->runAction()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ClientesController->run()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\yii\proyecto1\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/proyecto1/index.php/clientes/comprar/15
+in C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\comprar.php (28)
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (38)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
+2022/02/11 02:00:52 [error] [php] Undefined variable $clientes (C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\listar.php:3)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): ClientesController->renderInternal()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): ClientesController->renderFile()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): ClientesController->renderPartial()
+#4 C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php(30): ClientesController->render()
+#5 unknown(0): ClientesController->actionComprar()
+#6 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs()
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(286): ClientesController->runAction()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ClientesController->run()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\yii\proyecto1\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/proyecto1/index.php/clientes/comprar/111165
+in C:\xampp\htdocs\yii\proyecto1\protected\views\clientes\listar.php (3)
+in C:\xampp\htdocs\yii\proyecto1\protected\controllers\ClientesController.php (30)
+in C:\xampp\htdocs\yii\proyecto1\index.php (13)
